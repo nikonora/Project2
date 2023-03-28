@@ -54,8 +54,13 @@ def city_rating(cities_dict):
 # Вам нужно вернуть множество детей, которые не знают никого, кроме одногруппников из своего кружка (то есть они
 # не пересекаются с детьми из других кружков)
 
-def not_busy_children(groups_dict):
-    pass
+def not_busy_children(groups):
+    swimming = set(groups.get("swimming"))
+    chess = set(groups.get("chess"))
+    guitar = set(groups.get("guitar"))
+    group1 = swimming.symmetric_difference(chess)
+    return group1.symmetric_difference(guitar)
+
 
 
 # ===========================================================================
