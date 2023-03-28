@@ -107,4 +107,4 @@ if __name__ == '__main__':
     test_is_sorted()
     test_get_sublist()
     test_city_rating()
-    #test_not_busy_children()
+    test_not_busy_children()
