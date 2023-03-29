@@ -13,6 +13,6 @@ def filter_and_sum_squares(x, y):
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 numbers1 = list(filter(lambda is_ever: is_ever % 2 == 0, numbers))
-numbers2 = list(map(lambda square: square ** 2 , numbers1))
+numbers2 = list(map(lambda square: square ** 2, numbers1))
 result = reduce(filter_and_sum_squares, numbers2)
 print(result)
